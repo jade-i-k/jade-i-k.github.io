@@ -25,11 +25,11 @@
 	color: #C5D1EB;
 	background-color: #2F4858;
 	font-size: 60px;
-	text-align: center;
 }
 
 /*VIDEO GAMES*/
 
+/*background black, titles green*/
 #vg{
   background-color: #000000;
   color: #32DE8A;
@@ -38,6 +38,7 @@
 p
 {
 	font-size: 20px;
+  padding-left: 15px;
 }
 
 div {
