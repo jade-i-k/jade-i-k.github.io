@@ -10,28 +10,66 @@
 		<script src = "./js/index.js"> </script>
 
 		<!--nav var-->
-		<div class="navbar">
+		<div id="navbar" class="navbar">
 		  <a href="./index.html">Home</a>
 		  
-		  <a href="./sm.html">Shows and Movies</a>
+		  <div class="smdropdown">
+		    <a class="smdropbtn" href="./sm.html">Shows and Movies
+		    </a>
+		    <div class="smdropdown-content">
+		      <a href="#sm">Shows and Movies</a>
+		      <a href="#tokyoGhoul">Tokyo Ghoul</a>
+		      <a href="#memento">Memento</a>
+		      <a href="#haikyuu">Haikyuu!!</a>
+		      <a href="#wolfChildren">Wolf Children</a>
+		    </div>
+		  </div>
 
 		  <div class="vgdropdown">
 		    <a class="vgdropbtn" href="./videoGames.html">Video Games
 		    </a>
 		    <div class="vgdropdown-content">
-		      <a href="#videoGames">Video Games</a>
-		      <a href="#undertale">Undertale</a>
-		      <a href="#BOTW">Zelda: BOTW</a>
-		      <a href="#niNoKuni">Ni No Kuni</a>
-		      <a href="#moonlighter">Moonlighter</a>
-		      <a href="#stardew">Stardew Valley</a>
+		      <a href="./videoGames.html#videoGames">Video Games</a>
+		      <a href="./videoGames.html#undertale">Undertale</a>
+		      <a href="./videoGames.html#BOTW">Zelda: BOTW</a>
+		      <a href="./videoGames.html#niNoKuni">Ni No Kuni</a>
+		      <a href="./videoGames.html#moonlighter">Moonlighter</a>
+		      <a href="./videoGames.html#stardew">Stardew Valley</a>
 		    </div>
 		  </div>
 		</div>
 
 		<!--Beginning text stuff-->
-		<h1 id="sm" style = "text-align: center; font-size: 80px;">Video Games</h1>
+		<h1 id="sm" style = "text-align: center; font-size: 80px;">Shows + Movies</h1>
 		<p style = "color: #EAE6E5;">This is where I talk about shows and whatnot yattayattayatta blah :)</p>
+
+		<!--Tokyo Ghoul-->
+		<div id = "tokyoGhoul">
+			<h2 style = "text-align: center; font-size: 50px">Tokyo Ghoul</h2>
+			<img src = "./img/tokyoGhoul.jpeg" width = 90% class = "center">
+			<p style = "color: #EAE6E5;">I watched the first season in one sitting. The result was me crying at 5am and immediately starting the second season. <br><br>BEFORE YOU WATCH THE SHOW PLEASE NOTE THAT: its p gory, p sad, v guet. :)</p>
+		</div>
+
+		<!--Memento-->
+		<div id = "memento">
+			<h2 style = "text-align: center; font-size: 50px">Memento</h2>
+			<img src = "./img/memento.jpeg" width = 90% class = "center">
+			<p style = "color: #EAE6E5;">This is SUCH a good Movie...I finished it at 1 am then spent 2 hours looking up explanations because I was shoOk. From what I remember, it's a movie about this guy trying to solve a murder but he has short-term memory loss. The movie switches between past and present, with the present scenes in reverse chronological order. </p>
+		</div>
+
+		<!--Haikyuu!!-->
+		<div id = "haikyuu">
+			<h2 style = "text-align: center; font-size: 50px">Haikyuu!!</h2>
+			<img src = "./img/haikyuu.gif" width = 90% class = "center">
+			<p style = "color: #EAE6E5;">It's just a volleyball anime...That just so happens to have caused me SO much stress and took up 90% of my final's studying time and is a show every being on this planet should watch.</p>
+		</div>
+
+		<!--Wolf Children-->
+		<div id = "wolfChildren">
+			<h2 style = "text-align: center; font-size: 50px">Wolf Children</h2>
+			<img src = "./img/wolfChildren.jpg" width = 90% class = "center">
+			<p style = "color: #EAE6E5;">I dislike crying. Everytime I see this movie. I. SOB. Nothing else to say. I tear up thinking about this movie.</p>
+		</div>
 	</body>
 
 </html>
