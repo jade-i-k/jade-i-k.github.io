@@ -1,14 +1,39 @@
+/*HOME*/
+
+/*fun scrolly thingy (parallax effect)*/
+.parallax { 
+  /* The image used */
+  background-image: url("https://i.ibb.co/VTtWSVy/me.jpg");
+
+  /* full height */
+  height: 100%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body, html {
+  height: 100%;
+}
+
+body{
+  font-family: Arial, Helvetica, sans-serif;
+}
+
 /*My names looks*/
 #myName{
-	font-size: 80px;
-	text-align: center;
+  font-size: 80px;
+  text-align: center;
 }
 
 /*text color of the main page*/
 .namePart
 {
-	color: #C5D1EB;
-	background-color: #336699;
+  color: #72A9D8;
+  background-color: #721E5C;
 }
 
 /*text on image*/
@@ -22,9 +47,9 @@
 /*Look of about me words*/
 .aboutMe
 {
-	color: #C5D1EB;
-	background-color: #2F4858;
-	font-size: 60px;
+  color: #C5D1EB;
+  background-color: #2F4858;
+  font-size: 60px;
 }
 
 /*VIDEO GAMES*/
@@ -37,8 +62,8 @@
 
 p
 {
-	font-size: 20px;
-  padding-left: 15px;
+  font-size: 20px;
+  padding-left: 60px;
 }
 
 div {
@@ -49,34 +74,93 @@ body {
   margin: 0;
 }
 
-/* Style the navbar */
+/*centers a picture*/
+.center {
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/*NAVBAR*/
+
 #navbar {
   overflow: hidden;
   background-color: #333;
-  z-index: 1;
-  position: sticky;
-  width: 100%;
-  top:0;
 }
 
-/* Navbar links */
 #navbar a {
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
-  padding: 17px;
+  padding: 14px 16px;
   text-decoration: none;
-  z-index: 2;
+  font-size: 17px;
 }
 
-/*more nav bar stuff*/
-#navbar a:hover {
+.vgdropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.vgdropdown .vgdropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+#navbar a:hover, .vgdropdown:hover .vgdropbtn {
   background-color: #ddd;
   color: black;
 }
+
 #navbar a.active {
   background-color: #4CAF50;
   color: white;
 }
 
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+}
+
+.vgdropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  color: black;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.vgdropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.vgdropdown-content a:hover {
+  background-color: #000000;
+}
+
+.vgdropdown:hover .vgdropdown-content {
+  display: block;
+}
