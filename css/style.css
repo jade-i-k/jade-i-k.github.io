@@ -4,6 +4,9 @@
 .parallax { 
   /* The image used */
   background-image: url("https://i.ibb.co/VTtWSVy/me.jpg");
+  /*Idk how to make it a landscape photo and not lose the quality
+  would look something like this i guess ...
+  background-image: url("https://i.ibb.co/r3qJwDM/me.png");*/
 
   /* full height */
   height: 100%; 
@@ -17,10 +20,6 @@
 
 body, html {
   height: 100%;
-}
-
-body{
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 /*My names looks*/
@@ -60,6 +59,14 @@ body{
   color: #32DE8A;
 }
 
+/*SHOWS AND MOVIES*/
+
+/*background black, titles green*/
+#showsAndMovies{
+  background-color: #35060B;
+  color: #B98EA7;
+}
+
 p
 {
   font-size: 20px;
@@ -83,24 +90,28 @@ body {
 
 /*NAVBAR*/
 
-#navbar {
+.navbar {
   overflow: hidden;
   background-color: #333;
+  top: 10;
+  potion: fixed;
+  width: 100%;
 }
 
-#navbar a {
-  float: left;
+.navbar a {
+  float:left;
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 16px;
 }
 
+/*makes games go under the vg button and not all the way to left*/
 .vgdropdown {
-  float: left;
   overflow: hidden;
+  float: left;
 }
 
 .vgdropdown .vgdropbtn {
@@ -114,14 +125,35 @@ body {
   margin: 0;
 }
 
-#navbar a:hover, .vgdropdown:hover .vgdropbtn {
+.navbar a:hover, .vgdropdown:hover .vgdropbtn {
   background-color: #ddd;
   color: black;
 }
 
-#navbar a.active {
-  background-color: #4CAF50;
+.vgdropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #333;
+  color: black;
+  min-width: 160px;
+  z-index: 1;
+}
+
+.vgdropdown-content a {
+  float: none;
   color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.vgdropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.vgdropdown:hover .vgdropdown-content {
+  display: block;
 }
 
 .content {
@@ -136,31 +168,4 @@ body {
 
 .sticky + .content {
   padding-top: 60px;
-}
-
-.vgdropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #333;
-  color: black;
-  min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-
-.vgdropdown-content a {
-  float: none;
-  color: black;
-  padding: 12px 16px;
-  text-decoration: none;
-  display: block;
-  text-align: left;
-}
-
-.vgdropdown-content a:hover {
-  background-color: #000000;
-}
-
-.vgdropdown:hover .vgdropdown-content {
-  display: block;
 }
